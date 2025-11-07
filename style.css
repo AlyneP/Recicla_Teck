@@ -43,6 +43,15 @@ header nav a {
   font-size: 2rem;
 }
 
+.apresentacao {
+  height: 50vh;
+  width: 50%;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .produtosDisponíveis {
   display: flex;
   justify-content: space-around;

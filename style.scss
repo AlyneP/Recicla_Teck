@@ -29,6 +29,7 @@ header {
 
     }
 }
+
 .btnVerde {
     background-color: #16a34a;
     padding: 20px;
@@ -46,7 +47,20 @@ header {
         color: #1f2937;
         font-size: 2rem;
        }
-    }
+}
+
+.apresentacao {
+    height: 50vh;
+    width: 50%;
+    border: solid;
+
+    display: flex;
+    // flex-direction: row;  por padrão, a direção é em linha
+    flex-direction: column; // muda a direção para coluna
+    justify-content: space-around;
+    // flex-direction: column-reverse;
+    // flex-direction: row-reverse;
+}
 
 .produtosDisponíveis {
     display: flex;
