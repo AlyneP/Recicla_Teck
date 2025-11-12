@@ -10,7 +10,6 @@ header {
   justify-content: space-around;
   align-items: center;
   border: solid green 5px;
-  height: 10vh;
 }
 header nav {
   height: 10vh;
@@ -44,12 +43,38 @@ header nav a {
 }
 
 .apresentacao {
-  height: 50vh;
-  width: 50%;
-  border: solid;
+  height: 70vh;
+  border: solid red;
+  display: flex;
+  justify-content: space-around;
+}
+.apresentacao section {
+  border: solid aqua;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.apresentacao section h2 {
+  font-size: 3.75rem;
+  border: solid black;
+  width: 60%;
+}
+.apresentacao section p {
+  font-size: 1.25rem;
+  width: 50%;
+}
+
+.buttonsapresentação {
+  border: solid;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.buttonsapresentação button {
+  padding: 30px 40px;
+  cursor: pointer;
+  background-color: #16a34a;
+  color: #ffffff;
 }
 
 .produtosDisponíveis {
@@ -77,4 +102,56 @@ header nav a {
 .produtosDisponíveis article button {
   margin-bottom: 2rem;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 20vh;
+    flex-direction: column;
+  }
+  header nav {
+    width: 90%;
+  }
+  header nav a {
+    font-size: 1rem;
+  }
+  .caixaLogo {
+    width: 50%;
+  }
+  .caixaLogo h1 {
+    font-size: 2rem;
+  }
+  .apresentacao {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .apresentacao img {
+    width: 50vw;
+  }
+  .apresentacao section {
+    height: 50vh;
+  }
+  .apresentacao section h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .apresentacao section p {
+    width: 100%;
+  }
+  .buttonsapresentação {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .buttonsapresentação button {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .produtosDisponíveis {
+    flex-direction: column;
+  }
+  .produtosDisponíveis article {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

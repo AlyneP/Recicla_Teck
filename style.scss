@@ -11,7 +11,6 @@ header {
     align-items: center; //alinha os itens na vertical
 
     border: solid green 5px;
-    height: 10vh;
 
 
     nav {
@@ -50,16 +49,42 @@ header {
 }
 
 .apresentacao {
-    height: 50vh;
-    width: 50%;
-    border: solid;
-
+    height: 70vh;
+    border: solid red;
     display: flex;
-    // flex-direction: row;  por padrão, a direção é em linha
-    flex-direction: column; // muda a direção para coluna
     justify-content: space-around;
-    // flex-direction: column-reverse;
-    // flex-direction: row-reverse;
+
+    section {
+        border: solid aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h2 {
+            font-size: 3.75rem;
+            border: solid black;
+            width: 60%;
+        }
+
+        p {
+            font-size: 1.25rem;
+            width: 50%;
+        }
+    }
+}
+
+  .buttonsapresentação {
+    border: solid;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        padding: 30px 40px;
+        cursor: pointer;
+        background-color: #16a34a;
+        color: #ffffff;
+    }
 }
 
 .produtosDisponíveis {
@@ -90,6 +115,76 @@ header {
         button {
             margin-bottom: 2rem;
             padding: 1rem;
+        }
+    }
+}
+
+//Quero que você aplique esse estilo em telas de 0px até 768 px
+@media(max-width: 768px) {
+    
+    header {
+        height: 20vh;
+        flex-direction: column;
+
+        nav {
+            width: 90%;
+
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+
+.caixaLogo {
+    width: 50%; 
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.apresentacao {
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+
+     img {
+        width: 50vw;
+     }
+    section {
+       height: 50vh;
+
+       h2 {
+        font-size: 1.5rem;
+        width: 100%
+        } 
+
+        p {
+          width: 100%;
+        }
+    }
+    
+}
+
+.buttonsapresentação {
+    width: 100%;
+    justify-content: space-evenly;
+
+    button {
+        padding: 10px 20px;
+    }
+}
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .produtosDisponíveis {
+        flex-direction: column;
+
+        article {
+            width: 50%;
         }
     }
 }
